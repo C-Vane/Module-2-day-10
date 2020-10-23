@@ -1,0 +1,79 @@
+#navgames {
+  position: absolute;
+}
+#main-nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+#main-nav .navbar .dropdown {
+  margin-left: 30px;
+}
+#main-nav ul li:last-child .nav-link {
+  color: #de8ae5 !important;
+}
+#main-nav .nav-link::after {
+  content: " ⌄";
+  position: absolute;
+  top: 4px;
+}
+.fa-shopping-cart,
+.fa-search {
+  color: white;
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+#giveaway .jumbotron {
+  max-height: 150px;
+  background-color: black;
+  padding: 10px;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+#giveaway.jumbotron::after {
+  position: relative;
+  content: "";
+  background-image: url(/images/b7c1fb5c7d73289c3825fe8d51977457699bfd08bb8294430d8fda2ae8b8a9cb_giveaway_banner_logo_427.webp);
+  height: inherit;
+  width: inherit;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 20;
+}
+#giveaway button {
+  display: block;
+  height: fit-content;
+  width: 40%;
+  padding: 5px;
+  align-self: center;
+  background-color: rgb(155, 226, 47);
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(154, 226, 47, 0.568);
+}
+#carouseldeals {
+  height: 600px;
+}
+#carouseldeals .carousel-inner {
+  height: 600px;
+  width: 100%;
+  text-align: right;
+}
+
+#carouseldeals .carousel-inner button {
+  position: relative;
+  top: -100px;
+  right: 70px;
+}
+
+#moredeals .card-img-top {
+  width: 100%;
+  object-fit: cover;
+}
+#secondcarousel .card-body {
+  background-color: #de8ae5;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
