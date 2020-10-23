@@ -1,6 +1,5 @@
 body {
-  margin-top: 100px;
-  background-color: rgb(83, 76, 69);
+  background-color: #40342c;
 }
 
 #navgames {
@@ -11,7 +10,8 @@ body {
   z-index: 999;
   top: 0;
   width: 100%;
-  border-top: 5px solid purple;
+  border-top: 5px solid rgba(128, 0, 128, 0.24);
+  background-color: rgba(0, 0, 0, 0.425);
 }
 #main-nav .dropdown:hover .dropdown-menu {
   display: block;
@@ -19,21 +19,65 @@ body {
 #main-nav .navbar .dropdown {
   margin-left: 30px;
 }
-#main-nav ul li:last-child .nav-link {
-  color: #de8ae5 !important;
-}
+
 #main-nav .nav-link::after {
   content: " ⌄";
   position: absolute;
   top: 4px;
 }
+#main-nav .navbar-brand img {
+  background-color: white;
+  border-radius: 6px;
+}
+#main-nav .dropdown-item button {
+  width: 280px;
+}
+#main-nav .dropdown-item button.btn-success {
+  background-color: #78387b;
+}
+#main-nav li:last-child .dropdown-item {
+  padding: 0;
+  margin: 0;
+}
+#main-nav .dropdown-item .row {
+  width: 129%;
+  position: relative;
+  left: -22px;
+}
+#main-nav .dropdown-item .row .col-2 img {
+  width: 130%;
+  height: 70px;
+  margin: 2px;
+}
+
 .fa-shopping-cart,
 .fa-search {
   color: white;
   font-size: 20px;
   opacity: 0.7;
 }
-
+#outerworld .jumbotron {
+  background-image: url(/images/background.jpg);
+  background-repeat: no-repeat;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.badge-primary.big {
+  background-color: #78387b;
+  border-radius: 3px;
+  font-size: 30px;
+}
+.shop {
+  border-color: transparent;
+  background: linear-gradient(-180deg, #c1ec51, #80b02a);
+  box-shadow: 0 0 28px 8px rgba(0, 0, 0, 0.19), 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+.shop:hover {
+  background-color: #c1ec51;
+}
 #giveaway .jumbotron {
   max-height: 150px;
   background-color: black;
@@ -45,30 +89,22 @@ body {
   background-repeat: no-repeat;
 }
 #visa {
-  background: linear-gradient(to top, #9ca2d4, #122eac);
+  background: url(/images/visa.jpg);
 }
 
-#giveaway.jumbotron::after {
-  position: relative;
-  content: "";
-  background-image: url(/images/b7c1fb5c7d73289c3825fe8d51977457699bfd08bb8294430d8fda2ae8b8a9cb_giveaway_banner_logo_427.webp);
-  height: inherit;
-  width: inherit;
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: 20;
-}
 #giveaway button {
   display: block;
   height: fit-content;
-  width: 40%;
+  width: fit-content;
   padding: 5px;
   align-self: center;
   background-color: rgb(155, 226, 47);
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(154, 226, 47, 0.568);
+  border-color: transparent;
 }
-.carousel-indicators {
+#carouseldeals .carousel-indicators,
+#secondcarousel .carousel-indicators {
   bottom: -50px;
 }
 #carouseldeals {
@@ -90,7 +126,7 @@ body {
   width: 100%;
   object-fit: cover;
 }
-#secondcarousel .card-body {
+#bundeldeal1 .card-body {
   background-color: #de8ae5;
   height: 500px;
   display: flex;
